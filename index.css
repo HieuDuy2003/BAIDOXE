@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat";
+}
+.header {
+    display: flex;
+    background-color: rgba(95, 164, 10, 0.09);
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.header img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.header ul {
+    display: flex;
+    margin-left: 100px;
+    list-style: none;
+}
+.header ul li {
+    padding: 20px;
+}
+.header ul li a {
+    color: rgb(7, 1, 1);
+    text-decoration: none;
+    transition: 1s;
+}
+.header ul li a:hover {
+    color: red;
+}
+.header ul li i {
+    color: rgb(177, 9, 9);
+}
+.header ul li span {
+    color: rgb(213, 13, 13);
+    margin-left: 10px;
+    font-weight: bold;
+}
+.banner {
+    text-align: center;
+    background-image: url(bg-1.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner h2 {
+    color: blue;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.093),
+        rgba(255, 166, 0, 0.944),
+        rgba(149, 149, 20, 0.253),
+        rgba(0, 128, 0, 0.322),
+        rgba(0, 0, 255, 0.173),
+        rgba(76, 0, 130, 0.103),
+        rgba(238, 130, 238, 0.299)
+    );
+    padding: 10px;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.banner p {
+    color: brown;
+    font-size: 50px;
+}
+.banner img {
+    width: 15%;
+}
+.banner .thumb {
+    overflow: hidden;
+}
+.banner .thumb img {
+    width: 15%;
+}
+.banner .thumb img:hover {
+    transform: scale(1.2);
+}

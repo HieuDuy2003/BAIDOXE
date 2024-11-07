@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chọn Chỗ Đậu Xe</title>
+        <link rel="stylesheet" href="tinhtrangxe.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>THÔNG TIN <span>BÃI GIỮ XE</span></h1>
+            <h2>VUI LÒNG CHỌN 1 VỊ TRÍ</h2>
+            <p>Màu xanh là vị trí còn trống</p>
+            <div class="col">
+                <div class="slot empty" id="A1" onclick="toggleSelectSlot('A1')">A1</div>
+                <div class="slot empty" id="A2" onclick="toggleSelectSlot('A2')">A2</div>
+                <div class="slot empty" id="A3" onclick="toggleSelectSlot('A3')">A3</div>
+                <div class="slot empty" id="A4" onclick="toggleSelectSlot('A4')">A4</div>
+                <div class="slot empty" id="A5" onclick="toggleSelectSlot('A5')">A5</div>
+                <div class="slot empty" id="A6" onclick="toggleSelectSlot('A6')">A6</div>
+            </div>
+            <button id="confirmButton" onclick="confirmSelection()">XÁC NHẬN</button>
+            <a href="index.html">Quay lại trang chủ</a>
+        </div>
+
+        <!-- Firebase Configuration and JavaScript -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+        <script src="luachon.js"></script>
+        <!-- JavaScript mã dưới đây sẽ nằm trong luachon.js -->
+    </body>
+</html>

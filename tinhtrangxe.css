@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg-1.jpg);
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(207, 14, 14);
+}
+.container p {
+    margin-top: 20px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.slot {
+    width: calc(100% / 3 - 20px);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 217, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.empty {
+    background-color: rgb(35, 145, 35);
+}
+.occupied {
+    background-color: red;
+}
+.selected {
+    background-color: yellow !important;
+}
+.slot.selected {
+    background-color: rgba(221, 7, 60, 0.692);
+    color: white;
+}
+.container button {
+    background-color: rgba(161, 157, 157, 0.575);
+    transition: 1s;
+}
+.container button:hover {
+    background-color: red;
+}
+
+#confirmButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container a {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+}
+.container a:hover {
+    color: red;
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat";
+    background-image: url(bg-1.jpg);
+}
+.container {
+    text-align: center;
+}
+.container .datcho {
+    background-color: rgba(150, 155, 155, 0.068);
+    width: 60%;
+    margin: 30px auto;
+    padding: 50px;
+}
+.container .datcho h2 {
+    color: rgba(255, 0, 55, 0.849);
+    font-weight: bold;
+    font-size: 40px;
+    animation: changeColor 3s infinite alternate;
+    margin-bottom: 30px;
+}
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    50% {
+        color: rgb(153, 0, 255);
+    }
+    100% {
+        color: #d33c55;
+    }
+}
+
+.container .datcho .form_1 input {
+    display: block;
+    margin: 30px auto;
+    padding: 30px;
+    width: 50%;
+    border-radius: 20px;
+}
+.container .datcho .form_1 button {
+    padding: 30px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.container .datcho .form_1 button:hover {
+    background-color: #d33c55;
+}
+.container .datcho .form_1 a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container .datcho .form_1 a:hover {
+    color: blue;
+}
